@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root" class="weather-app">
+    <div id="dateTime">
+      <p id="date"></p>
+      <p id="time"></p>
+    </div>
+    <h1>Weather App</h1>
+    <div class="form-group">
+      <label for="locationInput">Enter Location:</label>
+      <input type="text" id="locationInput" placeholder="E.g., New York, US" />
+    </div>
+    <div class="unit-buttons">
+      <button id="unitCelsius" onclick="changeUnit('metric')">Celsius</button>
+      <button id="unitFahrenheit" onclick="changeUnit('imperial')">Fahrenheit</button>
+    </div>
+    <div id="currentWeather">
+      <p>Loading current weather...</p>
+    </div>
+    <div id="forecastWeather">
+      <p>Loading forecast...</p>
+    </div>
+    <div id="additionalInfo">
+      <p id="humidity">Humidity: --</p>
+      <p id="pressure">Pressure: --</p>
+      <p id="windSpeed">Wind Speed: --</p>
+      <p id="sunrise">Sunrise: --</p>
+      <p id="sunset">Sunset: --</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
