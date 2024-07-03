@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://wallpaperaccess.com/full/5202099.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 14px;
+}
+
+.weather-app {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.weather-app h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather-app p {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.weather-app img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.unit-buttons {
+  margin-top: 10px;
+}
+
+.unit-buttons button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 3px 10px rgba(0, 0, 0, 0.19);
+}
+
+.unit-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.forecast-day {
+  flex: 1;
+  text-align: center;
+}
+
+.forecast-day img {
+  width: 40px;
+  height: auto;
+}
+
+/* Styling for date, time, and additional info boxes */
+#dateTime {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+#dateTime p {
+  margin: 5px 0;
+}
+
+#additionalInfo {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: lightblue;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  width: 200px;
+  font-size: 1em;
+}
+
+#additionalInfo p {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-app {
+    max-width: 90%;
+  }
+
+  .weather-app h1 {
+    font-size: 1.6em;
+  }
+
+  .weather-app p {
+    font-size: 0.8em;
+  }
+
+  .weather-app img {
+    width: 60px;
+  }
+
+  .unit-buttons button {
+    font-size: 12px;
+  }
+
+  .forecast-day img {
+    width: 30px;
+  }
+
+  #dateTime p {
+    font-size: 0.7em;
+  }
+
+  #additionalInfo p {
+    font-size: 0.9em;
+  }
+}
+
