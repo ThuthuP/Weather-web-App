@@ -54,4 +54,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Acknowledgements
 OpenWeatherMap for providing weather data API.
 Bootstrap for responsive design components.
+ Weather app screenshot
+ ![Weather-app screenshot](https://github.com/ThuthuP/Weather-web-App/assets/133351685/a4c6f081-9c91-455e-9771-ab90c04b6c19)
 
+
+ 
